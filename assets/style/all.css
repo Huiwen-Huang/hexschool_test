@@ -1,23 +1,185 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
 .header {
-  height: 200px;
-  background-color: #00cc99; }
-
-.footer {
-  height: 200px;
-  background-color: #00cc99; }
-
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+  background-color: #AA0601;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s; }
-  .box:hover {
-    width: 200px;
-    background-color: #00cc99; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .header .logo img {
+    width: 80px;
+    height: 48.57px;
+    padding-top: 30px;
+    padding-left: 88px; }
+  .header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 38px;
+    padding-bottom: 41px;
+    padding-right: 24px; }
+    .header ul li a {
+      padding-right: 64px;
+      font-size: 20px;
+      color: white; }
+
+.footer {
+  background-color: #AA0601; }
+  .footer .container {
+    margin: 0 auto;
+    width: 1110px;
+    padding-top: 44px;
+    padding-bottom: 40px; }
+    .footer .container .info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .footer .container .info .menu ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 444px; }
+        .footer .container .info .menu ul li a {
+          font-size: 16px;
+          color: white; }
+      .footer .container .info .social img {
+        margin-left: 32px; }
+    .footer .container .contact {
+      color: white;
+      font: normal normal normal 36px/54px Roboto;
+      padding-top: 42px;
+      padding-bottom: 32px; }
+      .footer .container .contact .phone {
+        margin-bottom: 16px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .footer .container .contact .phone .photo {
+          width: 48px;
+          height: 48px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
+          .footer .container .contact .phone .photo img {
+            width: 36px;
+            height: 36px; }
+        .footer .container .contact .phone p {
+          font-size: 36px;
+          padding-left: 16px; }
+      .footer .container .contact .email {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding-bottom: 24px;
+        border-bottom: 1px solid white; }
+        .footer .container .contact .email .photo {
+          width: 48px;
+          height: 48px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .footer .container .contact .email .photo img {
+            width: 40px;
+            height: 32px; }
+        .footer .container .contact .email p {
+          font-size: 36px;
+          padding-left: 16px; }
+    .footer .container .note {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      color: white; }
+      .footer .container .note ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .footer .container .note ul li {
+          margin-left: 48px; }
+
+.main {
+  width: 300px;
+  height: 800px;
+  background-color: #fff000;
+  font-size: 24px; }
 
 /*# sourceMappingURL=all.css.map */
