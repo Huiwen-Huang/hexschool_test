@@ -1,0 +1,113 @@
+.header{
+  background-color: #AA0601;
+  display: flex;
+  justify-content: space-between;
+  .logo{
+    img{
+      width: 80px;
+      height: 48.57px;
+      padding-top: 30px;
+      padding-left: 88px;
+    }
+  }
+  ul{
+    display: flex;
+    justify-content: center;
+    padding-top: 38px;
+    padding-bottom: 41px;
+    padding-right: 24px;
+    li a{
+      padding-right: 64px;
+      font-size: 20px;
+      color: white;
+    }
+  }
+}
+.footer{
+  background-color: #AA0601;
+  .container{
+    margin: 0 auto;
+    width: 1110px;
+    padding-top: 44px;
+    padding-bottom: 40px;
+    .info{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .menu{
+        ul{
+          display: flex;
+          justify-content: space-between;
+          width: 444px;
+          li a{
+            font-size: 16px;
+            color: white;
+          }
+        }
+      }
+      .social{
+        img{
+          margin-left: 32px;
+        }
+      }
+    }
+    .contact{
+      color: white;
+      font: normal normal normal 36px/54px Roboto;
+      padding-top: 42px;
+      padding-bottom: 32px;
+      .phone{
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        .photo{
+          width: 48px;
+          height: 48px;
+          display: flex;
+          justify-content: center;
+          img{
+            width: 36px;
+            height: 36px;
+            
+          }
+        }
+        p{
+          font-size: 36px;
+          padding-left: 16px;
+        } 
+      }
+      .email{
+        display: flex;
+        align-items: center;
+        padding-bottom: 24px;
+        border-bottom: 1px solid white;
+        .photo{
+          width: 48px;
+          height: 48px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img{
+            width: 40px;
+            height: 32px;
+          }
+        }
+        p{
+          font-size: 36px;
+          padding-left: 16px;
+        } 
+      }
+    }
+    .note{
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      ul{
+        display: flex;
+        li{
+          margin-left: 48px;
+        }
+      }
+    }
+  }
+}
